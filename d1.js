@@ -13,5 +13,5 @@ var input = `1010
 505
 505`;
 
-input.split("\n").map(x => Number(x)).some((x,i,a) => {return a.slice(1).some(y => {if(y+x == 2020){console.log({"p1":x*y});return true;}}) ? true : false;});
-input.split("\n").map(x => Number(x)).some((x,i,a) => {return a.slice(1).some((y,j,b) => {return b.slice(1).some(z => {if(y+x+z == 2020){console.log({"p2":x*y*z});return true;}}) ? true : false;}) ? true : false;});
+input.split("\n").map(x => Number(x)).some((x,i,a) => {return a.slice(i).some(y => {if(y+x == 2020){console.log({"p1":x*y});return true;}}) ? true : false;});
+input.split("\n").map(x => Number(x)).some((x,i,a) => {return a.slice(i).some((y,j,b) => {return b.slice(j).some(z => {if(y+x+z == 2020){console.log({"p2":x*y*z});return true;}}) ? true : false;}) ? true : false;});
