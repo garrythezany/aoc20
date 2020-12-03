@@ -1,1 +1,3 @@
-# aoc20
+# aoc20 personal repo
+
+##### yeah, mainly for people to look at me baffled for why I'm even archiving stuff like this here... also....
